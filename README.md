@@ -1,4 +1,4 @@
-# coredns_docker
+# Coredns Docker Image Builder
 
 This is a simple bash code to identify and download the latest version of [CoreDNS](https://coredns.io/)
 
