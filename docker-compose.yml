@@ -1,0 +1,10 @@
+version: '3'
+services:
+  coredns1:
+    image: coredns:latest
+    container_name: coredns1
+    ports:
+      - '0.0.0.0:53:53/udp'
+      - '0.0.0.0:53:53/tcp'
+    volumes:
+      - ./coredns1/config:/coredns/config/
