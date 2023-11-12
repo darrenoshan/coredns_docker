@@ -63,3 +63,5 @@ generate_rfc1035_conf > "$maindir/config/local.db"
 dl_coredns_exec
 create_dockerfile
 docker build -f "$maindir/Dockerfile" -t mycoredns:$latest_vesrion_num "$maindir"
+docker tag mycoredns:$latest_vesrion_num coredns:latest
+echo -e "docker image built: \n mycoredns:$latest_vesrion_num \n\n coredns:latest "
